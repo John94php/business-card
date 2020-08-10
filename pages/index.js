@@ -28,7 +28,7 @@ Pierwszy przykład        </p>
           </a>
 
           <a
-            href="/products"
+            href="/offer"
             className={styles.card}
           >
             <h3><i class="fas fa-th-list"></i> Nasza oferta &rarr;</h3>
@@ -43,9 +43,9 @@ Pierwszy przykład        </p>
             <p>
 
                 <ul>
-                    <li><i class="fab fa-facebook"></i>&nbsp;Facebook</li>
-                    <li> <i class="fab fa-twitter"></i>&nbsp;Twitter</li>
-                    <li><i class="fab fa-youtube"></i>&nbsp;Youtube</li>
+                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i>&nbsp;Facebook</a></li>
+                    <li><a href="#" target="_blank"> <i class="fab fa-twitter"></i>&nbsp;Twitter</a></li>
+                    <li><a href="#" target="_blank"><i class="fab fa-youtube"></i>&nbsp;Youtube</a></li>
                 </ul>
             </p>
           </a>
