@@ -14,3 +14,13 @@ a {
 * {
   box-sizing: border-box;
 }
+a:hover {
+  color : red;
+}
+p.preview {
+  margin: 10rem;
+  border: 1px solid black;
+}
+ul {
+  list-style-type: none;
+}

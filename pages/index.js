@@ -1,50 +1,52 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Wizytówka</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Wizytówka
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+Pierwszy przykład        </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="/about" className={styles.card}>
+            <h3> <i class="fas fa-info-circle"></i> O nas &rarr;</h3>
+            <p>Kilka słów o naszej firmie</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+          <a href="/contact" className={styles.card}>
+            <h3><i class="fas fa-address-card"></i> Kontakt &rarr;</h3>
+            <p>Formularz kontaktowy</p>
           </a>
 
           <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
+            href="/products"
             className={styles.card}
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            <h3><i class="fas fa-th-list"></i> Nasza oferta &rarr;</h3>
+            <p>Sprawdź co mamy do zaoferowania</p>
           </a>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <h3>Social media &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+
+                <ul>
+                    <li><i class="fab fa-facebook"></i>&nbsp;Facebook</li>
+                    <li> <i class="fab fa-twitter"></i>&nbsp;Twitter</li>
+                    <li><i class="fab fa-youtube"></i>&nbsp;Youtube</li>
+                </ul>
             </p>
           </a>
         </div>
@@ -59,6 +61,9 @@ export default function Home() {
           Powered by{' '}
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
+          <p className={styles.card}>Created by Jan Zalesiński <a href="https://github.com/John94php" target="_blank"><i
+              className="fab fa-github"></i>&nbsp; Github</a></p>
+
       </footer>
     </div>
   )
